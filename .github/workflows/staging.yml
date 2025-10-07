@@ -1,0 +1,24 @@
+name: Workflow for staging development
+
+on: push
+
+jobs:
+  Job1:
+    name: First job to run
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Step 1
+        uses: actions/checkout@v4
+      - name: Step 2
+        run: ls -la
+
+  Job2:
+    name: Second job to run
+    runs-on: windows-latest
+    steps:
+    - name: Step one of job2
+      uses: actions/checkout@v4
+    - name: Step two of job2
+      run: ls
+      
+      
