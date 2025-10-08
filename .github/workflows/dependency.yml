@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: get the date
-      - run: date
+        run: date
       - run: pwd
   job-on-windows:
     name: A Job that runs on windows
